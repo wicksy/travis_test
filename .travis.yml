@@ -10,7 +10,7 @@ before_install:
   - curl -L https://bootstrap.saltstack.com -o bootstrap_salt.sh
   - sudo bash bootstrap_salt.sh -d
   - git clone https://github.com/wicksy/laptop-build.git
-  - sudo mkdir /srv
+  - sudo mkdir -p /srv
   - sudo ln -sf laptop-build/salt/roots /srv/salt
   - sudo ln -sf laptop-build/salt/pillar /srv/pillar
   - ls -Rail /srv/
