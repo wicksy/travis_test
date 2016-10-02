@@ -8,7 +8,7 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get -y install curl
   - curl -L https://bootstrap.saltstack.com -o bootstrap_salt.sh
-  - bash bootstrap_salt.sh -d
+  - sudo bash bootstrap_salt.sh -d
 
 script:
  - test.sh
