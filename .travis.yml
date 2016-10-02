@@ -11,4 +11,4 @@ before_install:
   - sudo bash bootstrap_salt.sh -d
 
 script:
- - test.sh
+ - test/test.sh
