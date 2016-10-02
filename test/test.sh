@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 mkdir -p /srv
 ln -sf "$(pwd)/laptop-build/salt/roots /srv/salt"
