@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/wicksy/travis_test.svg?branch=master)](https://travis-ci.org/wicksy/travis_test)</br>
+[![Build Status](https://travis-ci.org/wicksy/travis_test.svg?branch=master)](https://travis-ci.org/wicksy/travis_test) [![license](https://img.shields.io/badge/License-MIT-blue.svg?maxAge=2592000)](https://github.com/wicksy/travis_test/blob/master/LICENSE.md)</br>
 
 #### Testing Travis CI
 
