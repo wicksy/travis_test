@@ -1,10 +1,14 @@
 #!/bin/bash -x
 
 mkdir -p /srv
-ln -sf "$(pwd)/laptop-build/salt/roots" /srv/salt
-ln -sf "$(pwd)/laptop-build/salt/pillar" /srv/pillar
+ln -sf "$(pwd)/CV/salt/roots" /srv/salt
+ln -sf "$(pwd)/CV/salt/pillar" /srv/pillar
 
 salt-call --local -l debug state.apply
+
+docker ps
+
+curl "http://localhost:8080"
 
 salt-call --version
 
