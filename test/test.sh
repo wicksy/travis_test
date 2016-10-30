@@ -14,10 +14,7 @@
 
 #echo "Home dir stuff"
 #find ${HOME} -name testinfra -ls
-which testinfra
-/home/travis/virtualenv/python2.7.10/bin/testinfra --version
-echo "PATH: ${PATH}"
-echo "Local bin"
-ls -l /usr/local/bin
+
+ls -l ~/virtualenv/python2.7/bin/ 
 
 exit 0

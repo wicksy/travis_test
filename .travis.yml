@@ -16,4 +16,6 @@ install:
   - pip install -r requirements.txt
 
 script:
- - sudo test/test.sh
+  - which testinfra
+  - ls -l ~/virtualenv/python2.7/bin/
+  - sudo test/test.sh
