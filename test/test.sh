@@ -15,7 +15,8 @@
 #echo "Home dir stuff"
 #find ${HOME} -name testinfra -ls
 
-echo $PATH
-which testinfra
+path="${1}"
+echo ${path}
+${path} --version
 
 exit 0
