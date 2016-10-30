@@ -4,13 +4,13 @@ language: python
 python:
   - "2.7"
 
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get -y install curl
-  - curl -L https://bootstrap.saltstack.com -o bootstrap_salt.sh
-  - sudo bash bootstrap_salt.sh -d
-  - git clone https://github.com/wicksy/CV.git
-  - sudo mkdir -p /srv
+#before_install:
+  #- sudo apt-get -qq update
+  #- sudo apt-get -y install curl
+  #- curl -L https://bootstrap.saltstack.com -o bootstrap_salt.sh
+  #- sudo bash bootstrap_salt.sh -d
+  #- git clone https://github.com/wicksy/CV.git
+  #- sudo mkdir -p /srv
 
 install:
   - pip install -r requirements.txt
