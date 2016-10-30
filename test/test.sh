@@ -15,6 +15,7 @@
 #echo "Home dir stuff"
 #find ${HOME} -name testinfra -ls
 
-ls -l ~/virtualenv/python2.7/bin/ 
+echo $PATH
+which testinfra
 
 exit 0
