@@ -5,15 +5,14 @@ python:
   - "2.7"
 
 #before_install:
-  #- sudo apt-get -qq update
-  #- sudo apt-get -y install curl
-  #- curl -L https://bootstrap.saltstack.com -o bootstrap_salt.sh
-  #- sudo bash bootstrap_salt.sh -d
-  #- git clone https://github.com/wicksy/CV.git
-  #- sudo mkdir -p /srv
+  - sudo apt-add-repository -y ppa:ansible/ansible
+  - sudo apt-get -qq update
+  - sudo apt-get -y install ansible
+  - sudo mkdir -p /srv
 
 install:
   - pip install -r requirements.txt
 
 script:
-  - sudo test/test.sh $(which testinfra)
+  #- sudo test/test.sh $(which testinfra)
+  - sudo test/test.sh 
