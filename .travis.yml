@@ -9,10 +9,10 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get -y install ansible
   - sudo mkdir -p /srv
+  - git clone https://github.com/wicksy/laptop-build.git
 
 install:
   - pip install -r requirements.txt
 
 script:
-  #- sudo test/test.sh $(which testinfra)
-  - sudo test/test.sh 
+  - sudo test/test.sh
