@@ -1,12 +1,12 @@
 #!/bin/bash -x
 
-mkdir -p /srv
-ln -sf "$(pwd)/laptop-build/salt/roots" /srv/salt
-ln -sf "$(pwd)/laptop-build/salt/pillar" /srv/pillar
-ln -sf "$(pwd)/laptop-build/ansible" /srv/ansible
-
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu trusty stable" > /etc/apt/sources.list.d/docker.list
-apt-get update
+ln -sf "$(pwd)/configfiles/dotfiles/.vimrc" "${HOME}/.vimrc"
+mkdir -p "${HOME}/.vim/bundle"
+cd "${HOME}/.vim/bundle"
+git clone https://github.com/VundleVim/Vundle.vim.git
+cat "${HOME}/.vimrc"
+ls -ail "${HOME}"
+ls -ail "${HOME}/.vim/bundle"
+vim +PluginInstall +qall
 
 exit 0
