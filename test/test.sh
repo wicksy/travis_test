@@ -13,4 +13,7 @@ do
   which ${i}
 done
 
+dpkg -l python3-pip
+find /home/travis/virtualenv/ -ls
+
 exit 0
