@@ -2,7 +2,6 @@ sudo: required
 dist: trusty
 language: python
 python:
-  - "2.7"
   - "3.6"
 
 before_install:
@@ -14,7 +13,7 @@ before_install:
 # - sudo mkdir -p /srv
 
 install:
-  - pip2 install -r requirements.txt
+#  - pip2 install -r requirements.txt
   - pip3 install -r requirements.txt
 
 script:
