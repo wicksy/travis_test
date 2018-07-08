@@ -6,7 +6,7 @@ python:
 
 before_install:
   - sudo apt-get -qq update
-# - sudo apt-get -y install curl
+  - sudo apt-get -y install curl python3-pip
 # - curl -L https://bootstrap.saltstack.com -o bootstrap_salt.sh
 # - sudo bash bootstrap_salt.sh -d
 # - git clone https://github.com/wicksy/laptop-build.git
