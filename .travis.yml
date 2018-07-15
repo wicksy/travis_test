@@ -5,15 +5,12 @@ python:
   - "3.6"
 
 before_install:
+  - sudo /usr/bin/apt-add-repository -y ppa:ansible/ansible
   - sudo apt-get -qq update
-  - sudo apt-get -y install curl python3-pip
-# - curl -L https://bootstrap.saltstack.com -o bootstrap_salt.sh
-# - sudo bash bootstrap_salt.sh -d
-# - git clone https://github.com/wicksy/laptop-build.git
-# - sudo mkdir -p /srv
+  - sudo /usr/bin/apt-get -y install python python3 python-pip python3-pip git software-properties-common ansible sudo
 
 install:
-#  - pip2 install -r requirements.txt
+  - pip2 install -r requirements.txt
   - pip3 install -r requirements.txt
 
 script:
