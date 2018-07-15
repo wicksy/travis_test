@@ -1,5 +1,10 @@
 #!/bin/bash -x
 
+cat > /srv/ansible/hosts << EOF
+[localhost]
+localhost ansible_connection=local
+EOF
+
 mkdir -p /srv
 ln -sf "$(pwd)/laptop-build/ansible" /srv/ansible
 
