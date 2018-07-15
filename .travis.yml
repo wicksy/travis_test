@@ -2,12 +2,13 @@ sudo: required
 dist: trusty
 language: python
 python:
-  - "3.6"
+  - "2.7"
 
 before_install:
   - sudo /usr/bin/apt-add-repository -y ppa:ansible/ansible
   - sudo apt-get -qq update
-  - sudo /usr/bin/apt-get -y install python python3 python-pip python3-pip git software-properties-common ansible sudo
+  - sudo /usr/bin/apt-get -y install laptop-mode-tools python python3 python-pip python3-pip git software-properties-common ansible sudo
+  - git clone https://github.com/wicksy/laptop-build.git
 
 install:
   - pip2 install -r requirements.txt

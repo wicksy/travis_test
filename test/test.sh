@@ -1,11 +1,9 @@
 #!/bin/bash -x
 
-pip --version
-pip2 --version
-pip3 --version
-python --version
-python2 --version
-python3 --version
-ansible --version
+mkdir -p /srv
+ln -sf "$(pwd)/ansible" /srv/ansible
+
+export ANSIBLE_NOCOWS=1
+cd /srv/ansible && /usr/bin/ansible-playbook -i hosts site.yml --limit=localhost
 
 exit 0
